@@ -1,9 +1,10 @@
 name: Post to X
+permissions:
+  contents: write
 on:
   schedule:
-    - cron: "0 */8 * * *"   # 3/día
+    - cron: "0 */8 * * *"
   workflow_dispatch:
-
 jobs:
   post:
     runs-on: ubuntu-latest
